@@ -1,16 +1,16 @@
 package unit;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 import org.example.builder.CarBuilder;
 import org.example.model.Car;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class CarBuilderTest {
 
   @Test
-  void testCarBuilder() {
+  public void testCarBuilder() {
     // Create a CarBuilder instance
     CarBuilder carBuilder = new CarBuilder();
 

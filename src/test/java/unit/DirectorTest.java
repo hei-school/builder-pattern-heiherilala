@@ -1,16 +1,17 @@
 package unit;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 import org.example.builder.CarBuilder;
 import org.example.builder.Director;
 import org.example.model.Car;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class DirectorTest {
 
   @Test
-  void testConstructSportsCar() {
+  public void testConstructSportsCar() {
     // Create a CarBuilder instance
     CarBuilder carBuilder = new CarBuilder();
 
@@ -28,7 +29,7 @@ public class DirectorTest {
   }
 
   @Test
-  void testConstructSmallCar() {
+  public void testConstructSmallCar() {
     // Create a CarBuilder instance
     CarBuilder carBuilder = new CarBuilder();
 
